@@ -1,9 +1,7 @@
-exports.getPrice = (req, res, next) => {
+exports.postItems = (req, res, next) => {
+    const item = req.body;
+    console.log(item);
     res.status(200).json({
-        item: {
-            number: 123456,
-            price: '59.99',
-            inStock: true
-        }
-    });
+       message: "Thank You."
+    })
 }
