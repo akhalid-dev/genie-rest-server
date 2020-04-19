@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const priceController = require('../controllers/track');
+const details = require('../controllers/track');
 
-//POST /item/tracking
-router.post('/tracking', priceController.postItems);
+//POST /item/track
+router.post('/track', details.postItem);
 
 
 module.exports = router;
